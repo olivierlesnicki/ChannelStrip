@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		054413817994701F4CF0041E /* Pods_ChannelStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA61F5FAE9BB18FFF6FA9649 /* Pods_ChannelStrip.framework */; };
 		15FFD1401E473ECC006145A0 /* ChannelStrip.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FFD13E1E473ECC006145A0 /* ChannelStrip.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15FFD1471E47400C006145A0 /* CSPerfectTune.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFD1461E47400C006145A0 /* CSPerfectTune.swift */; };
+		15FFD14E1E4749B6006145A0 /* CSTuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFD14D1E4749B6006145A0 /* CSTuner.swift */; };
+		15FFD1501E47554A006145A0 /* CSKeyDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFD14F1E47554A006145A0 /* CSKeyDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15FFD13B1E473ECC006145A0 /* ChannelStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChannelStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FFD13E1E473ECC006145A0 /* ChannelStrip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelStrip.h; sourceTree = "<group>"; };
 		15FFD13F1E473ECC006145A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15FFD1461E47400C006145A0 /* CSPerfectTune.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSPerfectTune.swift; sourceTree = "<group>"; };
+		15FFD14D1E4749B6006145A0 /* CSTuner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSTuner.swift; path = Metering/CSTuner.swift; sourceTree = "<group>"; };
+		15FFD14F1E47554A006145A0 /* CSKeyDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSKeyDetector.swift; path = Metering/CSKeyDetector.swift; sourceTree = "<group>"; };
 		35EB0DBF7266F4F40D071416 /* Pods-ChannelStrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChannelStrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChannelStrip/Pods-ChannelStrip.debug.xcconfig"; sourceTree = "<group>"; };
 		AA61F5FAE9BB18FFF6FA9649 /* Pods_ChannelStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChannelStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E113957DD771DE8F2E0E53F4 /* Pods-ChannelStrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChannelStrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChannelStrip/Pods-ChannelStrip.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,11 +57,20 @@
 		15FFD13D1E473ECC006145A0 /* ChannelStrip */ = {
 			isa = PBXGroup;
 			children = (
+				15FFD14C1E4749A6006145A0 /* Metering */,
 				15FFD13E1E473ECC006145A0 /* ChannelStrip.h */,
 				15FFD13F1E473ECC006145A0 /* Info.plist */,
-				15FFD1461E47400C006145A0 /* CSPerfectTune.swift */,
 			);
 			path = ChannelStrip;
+			sourceTree = "<group>";
+		};
+		15FFD14C1E4749A6006145A0 /* Metering */ = {
+			isa = PBXGroup;
+			children = (
+				15FFD14D1E4749B6006145A0 /* CSTuner.swift */,
+				15FFD14F1E47554A006145A0 /* CSKeyDetector.swift */,
+			);
+			name = Metering;
 			sourceTree = "<group>";
 		};
 		2312767308F197F960EE4A91 /* Pods */ = {
@@ -195,7 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15FFD1471E47400C006145A0 /* CSPerfectTune.swift in Sources */,
+				15FFD14E1E4749B6006145A0 /* CSTuner.swift in Sources */,
+				15FFD1501E47554A006145A0 /* CSKeyDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
