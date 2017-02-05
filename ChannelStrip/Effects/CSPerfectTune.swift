@@ -9,12 +9,16 @@
 import Foundation
 import AudioKit
 
-class CSKeyDetector : CSTuner {
+class CSPerfectTune : CSTuner {
     
     var timer : Timer?
+    var pitcher : AKPitchShifter?
     
     public init(_ node: AKNode) {
         super.init(node)
+        
+        pitcher = AKPitchShifter(node)
+        setScaleAndKey(.major, key: .c)
         
         if (isStarted) {
             startTimer()
@@ -39,7 +43,9 @@ class CSKeyDetector : CSTuner {
     }
     
     func compute() {
-        
+        if tune != nil {
+            pitcher?.shift = -(tune?.offset)!
+        }
     }
     
     override func start() {

@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/olivierlesnicki/ChannelStrip"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Olivier Lesnicki" => "olivier.lesnicki@gmail.com" }
-  s.platform     = :ios
+  s.platform     = :ios, '9.0'
   s.source       = { :git => "https://github.com/olivierlesnicki/ChannelStrip.git", :tag => "#{s.version}" }
   s.source_files  = "ChannelStrip/**/*.{swift}"
   s.dependency 'AudioKit', '~> 3.5'
